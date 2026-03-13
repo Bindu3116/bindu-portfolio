@@ -1,0 +1,22 @@
+---
+title: "Medical ML Diagnostics: Minimizing False Negatives"
+date: "2026-02-10"
+description: "Lessons from building an infectious disease classifier with noisy epidemiological data and recall-focused evaluation."
+tags: ["XGBoost", "healthcare", "evaluation"]
+---
+
+## Problem framing
+
+For public health screening, false negatives can be costly. That pushed our team toward **recall-focused** optimization with careful threshold selection.
+
+## What helped most
+
+- Feature engineering from clinical context (e.g., comorbidity counts)
+- Strong baselines + simple model comparisons
+- Proper split strategy (avoid leakage)
+
+## Metrics that mattered
+
+- ROC-AUC for ranking quality
+- Recall to reduce missed positives
+- Precision trade-offs based on screening capacity

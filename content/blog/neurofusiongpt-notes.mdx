@@ -1,0 +1,23 @@
+---
+title: "NeuroFusionGPT: Notes on EEG+ECG Multimodal Fusion"
+date: "2026-03-01"
+description: "How I think about signal preprocessing, fusion strategies, and evaluation for stress detection using EEG and ECG."
+tags: ["multimodal", "transformers", "EEG", "ECG"]
+---
+
+## Why EEG + ECG?
+
+EEG and ECG capture different physiological views of stress. The key is to align **timing**, handle **noise**, and learn representations that generalize across subjects.
+
+## Pipeline sketch
+
+- Signal cleaning and segmentation
+- Feature learning with encoders (CNN / Transformer)
+- Fusion (early, late, or attention-based)
+- Evaluation: subject-wise splits, calibration, robustness checks
+
+## Next experiments
+
+- Compare early vs attention fusion
+- Add uncertainty estimates for safer feedback
+- Build a small ablation suite for preprocessing choices
