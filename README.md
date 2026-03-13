@@ -36,3 +36,10 @@ Add your website to LinkedIn:
 - npm install
 - npm run dev
 
+## Git commands
+- git init
+- git add .
+- git commit -m "Initial commit - portfolio"
+- git branch -M main
+- git remote add origin https://github.com/Bindu3116/bindu-portfolio.git
+- git push -u origin main

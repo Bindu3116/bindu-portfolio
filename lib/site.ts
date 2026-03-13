@@ -2,10 +2,10 @@ export const site = {
   name: "Bindu Chandra Shekar Reddy",
   headline: "AI/ML Engineer • Multimodal Transformers • Full-Stack Developer",
   location: "Sacramento, CA",
-  email: "YOUR_EMAIL_HERE",
+  email: "bindu.c3116@gmail.com",
   links: {
-    github: "YOUR_GITHUB_URL_HERE",
-    linkedin: "YOUR_LINKEDIN_URL_HERE",
+    github: "https://github.com/Bindu3116",
+    linkedin: "https://www.linkedin.com/in/binduchandrashekarr/",
     resume: "/resume.pdf"
   }
 };

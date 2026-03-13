@@ -41,7 +41,7 @@ export default function Contact() {
           </div>
           <div className="space-y-1">
             <dt className="text-zinc-400">Website</dt>
-            <dd className="text-zinc-200">binduchandrashekarreddy.com</dd>
+            <dd className="text-zinc-200">binduchandra.vercel.app</dd>
           </div>
         </dl>
       </div>
