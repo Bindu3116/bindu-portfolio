@@ -29,7 +29,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    title: "Team Project — ML-based Medical Diagnostics for Infectious Diseases",
+    title: "ML-based Medical Diagnostics for Infectious Diseases",
     period: "Aug 2025 – Dec 2025",
     tags: [
       "XGBoost",

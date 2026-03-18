@@ -33,7 +33,7 @@ export default function BlogIndex() {
             <div className="flex flex-wrap items-center justify-between gap-2">
               <h2 className="text-base font-semibold text-zinc-100">{p.frontmatter.title}</h2>
               <p className="text-xs text-zinc-500">
-                {p.frontmatter.date} · {p.readingMinutes} min
+                {/*{p.frontmatter.date} · {p.readingMinutes} min */}
               </p>
             </div>
             <p className="mt-2 text-sm text-zinc-300">{p.frontmatter.description}</p>

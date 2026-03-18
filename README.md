@@ -29,7 +29,7 @@ Edit these files:
 ## LinkedIn
 
 Add your website to LinkedIn:
-- Contact info → Website: `https://binduchandrashekarreddy.com`
+- Contact info → Website: `https://binduchandra.vercel.app/`
 - Featured → Link → same URL
 
 ## Project run command
@@ -43,3 +43,9 @@ Add your website to LinkedIn:
 - git branch -M main
 - git remote add origin https://github.com/Bindu3116/bindu-portfolio.git
 - git push -u origin main
+
+## Whenever i change the code Git commands to push and update
+
+- git add .
+- git commit -m "Updated content"
+- git push

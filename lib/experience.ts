@@ -31,8 +31,8 @@ export const experience: ExperienceItem[] = [
   {
     role: "Teaching Assistant / Instructional Student Assistant",
     org: "California State University, Sacramento",
-    period: "(Add exact dates from resume)",
-    location: "Sacramento, CA",
+    period: "",
+    location: "",
     bullets: [
       "Supported Java and object-oriented programming instruction through labs, grading, and student mentoring.",
       "Helped students debug projects and strengthen fundamentals in data structures and software design."

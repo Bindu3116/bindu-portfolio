@@ -21,7 +21,7 @@ export default async function BlogPostPage({
         >
           ← All posts
         </Link>
-        <p className="text-xs text-zinc-500">{frontmatter.date} · {readingMinutes} min</p>
+        {/* <p className="text-xs text-zinc-500">{frontmatter.date} · {readingMinutes} min</p> */}
       </div>
 
       <h1 className="mt-6 text-3xl font-semibold tracking-tight text-zinc-100">
@@ -34,13 +34,24 @@ export default async function BlogPostPage({
         dangerouslySetInnerHTML={{ __html: html }}
       />
 
-      <div className="mt-10 rounded-3xl border border-zinc-800 bg-zinc-900/20 p-6">
-        <p className="text-sm text-zinc-300">
+      <div className="mt-10 rounded-2xl border border-zinc-800 bg-zinc-900/30 p-6 text-sm text-zinc-300">
+        <p>
           Want to discuss this? Reach me on{" "}
-          <a className="text-zinc-100 underline decoration-zinc-700 underline-offset-4" href="#contact">
+          <a
+            href="mailto:bindu.c3116@gmail.com"
+            className="underline hover:text-white"
+          >
             email
-          </a>
-          .
+          </a>{" "}
+          or check the{" "}
+          <a
+            href="https://github.com/Bindu3116"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-white"
+          >
+            source code
+          </a>.
         </p>
       </div>
     </main>
