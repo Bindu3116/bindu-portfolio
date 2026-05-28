@@ -1,20 +1,80 @@
 ---
-title: "Edge Computing for Real-Time Health Monitoring"
-date: "2026-01-22"
-description: "What edge processing improves (latency, reliability) and what it complicates (updates, observability) in IoT health systems."
-tags: ["edge", "IoT", "deployment"]
+title: "IoT-Based Real-Time Heart Monitoring with Edge Computing"
+description: "A real-time healthcare monitoring system integrating IoT devices, edge computing, and machine learning for cardiovascular risk prediction."
+tags: ["IoT", "Edge Computing", "Healthcare AI", "Heart Disease Prediction"]
 ---
 
-## Why edge?
+## Overview
 
-Edge processing can reduce latency and keep systems resilient when connectivity is limited.
+This project focuses on building a real-time cardiovascular health monitoring system using IoT devices, edge computing, and machine learning techniques.
 
-## Common pitfalls
+The system was designed to support continuous health monitoring and early detection of heart-related risks using demographic, physiological, and lifestyle factors.
 
-- Model updates and versioning
-- Debugging on-device behavior
-- Observability gaps
+## System Architecture
 
-## A practical approach
+The architecture integrates:
+- IoT-enabled health data collection
+- Edge computing for low-latency processing
+- Machine learning-based heart disease prediction
+- Cloud deployment using Docker and Kubernetes
 
-Start with a minimal edge workload, define clear fallbacks, and keep the cloud path as a safety net.
+An iOS-based frontend was developed for real-time monitoring and interaction with connected devices.
+
+## Edge Computing Integration
+
+Edge processing was used to:
+- Reduce inference latency
+- Improve reliability during unstable connectivity
+- Enable near real-time health monitoring
+- Minimize unnecessary cloud communication
+
+This approach improved responsiveness and scalability for healthcare monitoring workflows.
+
+## Machine Learning Pipeline
+
+The predictive pipeline used:
+- Demographic features
+- Lifestyle indicators
+- Physiological measurements
+- Feature engineering techniques
+- Standardized preprocessing workflows
+
+Multiple machine learning models were evaluated including:
+- Random Forest
+- Logistic Regression
+- XGBoost
+- LightGBM
+
+## Results
+
+The final optimized models achieved:
+- ROC-AUC around 0.80
+- Strong precision-recall balance
+- Improved predictive reliability for cardiovascular risk assessment
+
+Feature importance analysis identified:
+- Pulse pressure
+- Cholesterol
+- Stress
+- Lifestyle indicators
+as major predictors.
+
+## Technologies
+
+- Python
+- XGBoost
+- LightGBM
+- Docker
+- Kubernetes (GKE)
+- iOS
+- IoT Systems
+- Edge Computing
+
+## Future Scope
+
+Future work includes:
+- Apple Watch sensor integration
+- Real-time wearable monitoring
+- Edge AI optimization
+- Mobile healthcare deployment
+- Personalized wellness recommendations

@@ -18,7 +18,7 @@ export default function Projects() {
         <motion.article
           key={p.title}
           whileHover={{ y: -3 }}
-          className="group rounded-3xl border border-zinc-800 bg-zinc-900/20 p-6 shadow-sm"
+          className="group h-full rounded-3xl border border-zinc-800 bg-zinc-900/20 p-6 shadow-sm"
         >
           <div className="flex items-start justify-between gap-4">
             <div>

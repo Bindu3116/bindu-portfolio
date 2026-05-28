@@ -23,6 +23,8 @@ export const projects: Project[] = [
       "Python",
       "Transformers",
       "TensorFlow",
+      "PyTorch",
+      "Cross-Attention",
       "Deep Learning",
       "Multimodal AI",
       "Google Colab"
@@ -46,7 +48,8 @@ export const projects: Project[] = [
       "XGBoost",
       "Scikit-learn",
       "Healthcare AI",
-      "Feature Engineering"
+      "Feature Engineering",
+      "IEEE SysCon"
     ]
   },
   {

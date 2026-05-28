@@ -1,23 +1,48 @@
 ---
-title: "NeuroFusionGPT: Notes on EEG+ECG Multimodal Fusion"
-date: "2026-03-01"
-description: "How I think about signal preprocessing, fusion strategies, and evaluation for stress detection using EEG and ECG."
-tags: ["multimodal", "transformers", "EEG", "ECG"]
+title: "NeuroFusionGPT: Cross-Attention Multimodal Stress Classification using EEG and ECG"
+description: "A multimodal transformer framework that fuses EEG and ECG signals using bidirectional cross-attention for 5-level stress classification."
+tags: ["Transformers", "EEG", "ECG", "Multimodal AI", "Healthcare AI"]
 ---
 
-## Why EEG + ECG?
+## Overview
 
-EEG and ECG capture different physiological views of stress. The key is to align **timing**, handle **noise**, and learn representations that generalize across subjects.
+NeuroFusionGPT is a multimodal deep learning framework developed for physiological stress classification using EEG and ECG biosignals.
 
-## Pipeline sketch
+The system combines:
+- Transformer-based EEG encoding
+- MLP-based ECG encoding
+- Bidirectional cross-attention fusion
+- LLM-generated wellness feedback
 
-- Signal cleaning and segmentation
-- Feature learning with encoders (CNN / Transformer)
-- Fusion (early, late, or attention-based)
-- Evaluation: subject-wise splits, calibration, robustness checks
+## Architecture
 
-## Next experiments
+The EEG encoder treats 16 EEG channels as sequential tokens and processes them using a Transformer encoder with positional encoding.
 
-- Compare early vs attention fusion
-- Add uncertainty estimates for safer feedback
-- Build a small ablation suite for preprocessing choices
+The ECG encoder processes 187-dimensional ECG feature vectors through a multi-layer perceptron with batch normalization.
+
+Both embeddings are fused using bidirectional cross-attention to model brain-heart coupling patterns.
+
+## Results
+
+- Test Accuracy: 94.54%
+- Balanced Accuracy: 91.93%
+- Macro F1-score: 0.8052
+- Total Parameters: 679,557
+
+The model achieved strong performance on Calm and Severe Stress classes while maintaining robust minority-class recall through focal loss and class weighting.
+
+## Technologies
+
+- PyTorch
+- Transformers
+- Cross-Attention
+- Google Colab GPU
+- Scikit-learn
+- OpenRouter API
+
+## Research Contributions
+
+- Bidirectional EEG-ECG fusion
+- Cross-attention multimodal architecture
+- Class imbalance handling using focal loss
+- LLM-powered wellness feedback generation

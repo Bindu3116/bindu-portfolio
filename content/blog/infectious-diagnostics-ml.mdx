@@ -1,22 +1,52 @@
 ---
-title: "Medical ML Diagnostics: Minimizing False Negatives"
-date: "2026-02-10"
-description: "Lessons from building an infectious disease classifier with noisy epidemiological data and recall-focused evaluation."
-tags: ["XGBoost", "healthcare", "evaluation"]
+title: "ML-based Medical Diagnostics for Infectious Diseases"
+description: "IEEE SysCon 2026 published healthcare ML system for COVID-19 prediction using epidemiological data."
+tags: ["XGBoost", "Healthcare AI", "Feature Engineering", "ML Pipeline"]
 ---
 
-## Problem framing
+## Overview
 
-For public health screening, false negatives can be costly. That pushed our team toward **recall-focused** optimization with careful threshold selection.
+This project presents a supervised machine learning framework for infectious disease prediction using the Mexico National Epidemiological Surveillance Dataset.
 
-## What helped most
+The system was designed to support scalable healthcare diagnostics in resource-limited environments.
 
-- Feature engineering from clinical context (e.g., comorbidity counts)
-- Strong baselines + simple model comparisons
-- Proper split strategy (avoid leakage)
+## Dataset
 
-## Metrics that mattered
+- 263,000+ epidemiological records
+- Demographic data
+- Comorbidity indicators
+- Clinical symptom timelines
+- Public health surveillance variables
 
-- ROC-AUC for ranking quality
-- Recall to reduce missed positives
-- Precision trade-offs based on screening capacity
+## Methodology
+
+The pipeline includes:
+- Missing-value correction
+- Feature engineering
+- Class imbalance handling
+- One-hot encoding
+- Standardization
+- XGBoost optimization
+
+## Engineered Features
+
+- Comorbidity count
+- Symptom-to-admission interval
+- Age-group categorization
+- Temporal epidemiological features
+
+## Results
+
+- ROC-AUC: 0.80
+- Recall: 0.73
+- Macro F1-score: 0.72
+
+The tuned XGBoost classifier outperformed baseline ensemble models across clinically relevant evaluation metrics.
+
+## Publication
+
+Published at:
+IEEE International Systems Conference (SysCon 2026)
+
+DOI:
+10.1109/SysCon66367.2026.11503514
