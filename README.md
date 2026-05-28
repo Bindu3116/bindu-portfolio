@@ -29,7 +29,7 @@ Edit these files:
 ## LinkedIn
 
 Add your website to LinkedIn:
-- Contact info → Website: `https://binduchandra.vercel.app/`
+- Contact info → Website: `https://binduchandra.vercel.app`
 - Featured → Link → same URL
 
 ## Project run command
