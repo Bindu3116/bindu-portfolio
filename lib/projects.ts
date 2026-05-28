@@ -9,43 +9,44 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "NeuroFusionGPT — Multimodal Transformer for EEG + ECG Stress Detection",
-    period: "Master’s Project",
-    tags: [
-      "Multimodal Learning",
-      "Transformers",
-      "EEG",
-      "ECG",
-      "LLM Feedback",
-      "Python"
-    ],
+    title: "NeuroFusionGPT – Multimodal Stress Detection System",
+    period: "2025 - 2026",
     summary:
-      "A multimodal framework that fuses EEG and ECG signals to detect stress and generate human-friendly feedback.",
+      "Transformer-based multimodal deep learning system for EEG + ECG stress prediction.",
     bullets: [
-      "Designing an end-to-end pipeline for multimodal fusion (EEG + ECG) with robust preprocessing and representation learning.",
-      "Experimenting with transformer-based encoders and fusion strategies to improve generalization across subjects.",
-      "Adding an LLM-based layer to translate predictions into user-facing insights and actionable recommendations.",
-      "Targeting a deployable, real-world workflow for wellness monitoring and reporting."
+      "Built a multimodal deep learning model that predicts 5 stress levels by fusing EEG and ECG signals using feature-level neural fusion.",
+      "Implemented Transformer-based EEG modeling (16 features) and MLP-based ECG analysis (188 features) using 95K+ physiological signal samples.",
+      "Developed an end-to-end ML pipeline including preprocessing, feature scaling, multimodal fusion, inference, and evaluation using accuracy, precision, recall, F1-score and confusion matrix.",
+      "Integrated an AI wellness feedback module that generates personalized stress-management guidance based on predicted stress levels."
+    ],
+    tags: [
+      "Python",
+      "Transformers",
+      "TensorFlow",
+      "Deep Learning",
+      "Multimodal AI",
+      "Google Colab"
     ]
   },
   {
     title: "ML-based Medical Diagnostics for Infectious Diseases",
     period: "Aug 2025 – Dec 2025",
-    tags: [
-      "XGBoost",
-      "Supervised ML",
-      "Feature Engineering",
-      "Public Health",
-      "Model Evaluation"
-    ],
+    
     summary:
-      "A supervised ML system to predict infection status from epidemiological surveillance data in high-noise, resource-limited settings.",
+      "IEEE SysCon 2026 published ML diagnostic system for infectious disease prediction.",
     bullets: [
-      "Selected for presentation at IEEE SysCon (Systems Conference) for scalability and real-world diagnostic relevance.",
-      "Built a supervised ML pipeline using the Mexico National Epidemiological Surveillance dataset, focusing on noisy clinical records.",
-      "Optimized an XGBoost classifier to achieve 0.80 ROC-AUC and 0.73 recall, prioritizing reduced false negatives for public health safety.",
-      "Engineered informative features (e.g., comorbidity counts, symptom-to-admission intervals) to strengthen predictive signals.",
-      "Designed for resource-limited environments as a data-driven alternative when lab testing is constrained during surge periods."
+      "Published at IEEE International Systems Conference (SysCon 2026).",
+      "Developed a supervised ML pipeline using epidemiological data (263K+ samples) for COVID-19 prediction.",
+      "Engineered clinical and temporal features such as comorbidity count and symptom-to-admission interval.",
+      "Built and optimized an XGBoost model achieving 0.80 ROC-AUC and 0.73 Recall for high-risk case detection.",
+      "Designed a robust preprocessing pipeline to handle noisy, imbalanced healthcare data."
+    ],
+    tags: [
+      "Python",
+      "XGBoost",
+      "Scikit-learn",
+      "Healthcare AI",
+      "Feature Engineering"
     ]
   },
   {

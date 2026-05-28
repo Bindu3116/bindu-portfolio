@@ -28,7 +28,7 @@ export default function Hero() {
       >
         <div className="flex flex-wrap gap-2">
           <Pill>{site.location}</Pill>
-          <Pill>Open to ML/AI roles</Pill>
+          <Pill>Open to ML/AI & Full-Stack roles</Pill>
           <Pill>Multimodal Transformers</Pill>
         </div>
 

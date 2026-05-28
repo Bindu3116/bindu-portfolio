@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import About from "@/components/sections/About";
 import Projects from "@/components/sections/Projects";
+import Publications from "@/components/sections/Publications";
 import Skills from "@/components/sections/Skills";
 import Experience from "@/components/sections/Experience";
 import Education from "@/components/sections/Education";
@@ -19,6 +20,9 @@ export default function HomePage() {
         </Section>
         <Section id="projects" title="Featured Projects">
           <Projects />
+        </Section>
+        <Section id="publications" title="Publications">
+          <Publications />
         </Section>
         <Section id="skills" title="Skills">
           <Skills />
